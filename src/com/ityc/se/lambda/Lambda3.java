@@ -1,4 +1,4 @@
-package com.mashibing.se.lambda;
+package com.ityc.se.lambda;
 
 import java.util.ArrayList;
 import java.util.HashSet;

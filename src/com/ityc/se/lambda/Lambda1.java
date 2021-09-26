@@ -1,4 +1,4 @@
-package com.mashibing.se.lambda;
+package com.ityc.se.lambda;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;

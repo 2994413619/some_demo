@@ -1,4 +1,4 @@
-package com.mashibing.se.lambda;
+package com.ityc.se.lambda;
 
 import java.util.function.BiFunction;
 

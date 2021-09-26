@@ -1,4 +1,4 @@
-package com.mashibing.se.streamApi;
+package com.ityc.se.streamApi;
 
 import java.util.Arrays;
 import java.util.List;
