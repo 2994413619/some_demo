@@ -3,9 +3,9 @@ package com.ityc.arithmetic.leetcode.leetcode0020;
 /**
  * @author yuchao
  * @date 2020/3/9 11:58
- * @description ac:100%
+ * @description ac:100% 回文数
  */
-public class LeetCode009回文数 {
+public class LeetCode009_Palindrome_Number {
     public boolean isPalindrome(int x) {
         String string = x + "";
         for(int i = 0; i < string.length() / 2; i++){

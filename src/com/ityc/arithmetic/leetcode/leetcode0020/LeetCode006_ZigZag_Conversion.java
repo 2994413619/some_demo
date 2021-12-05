@@ -7,7 +7,7 @@ import org.junit.Test;
  * @date 2020/1/29 17:18
  * @description ac:100%
  */
-public class LeetCode006Z字形变换 {
+public class LeetCode006_ZigZag_Conversion {
     public String convert(String s, int numRows) {
         if(numRows == 1){
             return s;

@@ -8,9 +8,9 @@ import java.util.regex.Pattern;
 /**
  * @author yuchao
  * @date 2020/2/10 11:13
- * @description ac:100%
+ * @description ac:100%  字符串转换整数
  */
-public class LeetCode008字符串转换整数 {
+public class LeetCode008_String_to_Integer_atoi {
     public int myAtoi(String str) {
         int result = 0 ;
         String trim = str.trim();

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @date 2020/01/29 16:40
  * @description ac:100%
  */
-public class LeetCode005最长回文串 {
+public class LeetCode005_Longest_Palindromic_Substring {
     public String longestPalindrome(String s) {
         if(s == null){
             return null;

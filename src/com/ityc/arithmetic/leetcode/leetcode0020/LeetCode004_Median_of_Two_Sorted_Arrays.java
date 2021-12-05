@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @date 2019/12/22 22:57
  * @description ac:100%
  */
-public class LeetCode004寻找两个有序数组的中位数 {
+public class LeetCode004_Median_of_Two_Sorted_Arrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         int i = 0, j = 0;

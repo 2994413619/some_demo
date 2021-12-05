@@ -8,7 +8,7 @@ import org.junit.Test;
  * @description ac:100%
  * 动态规划（最值问题）
  */
-public class LeetCode322零钱兑换 {
+public class LeetCode322_Coin_Change {
     public int coinChange(int[] coins, int amount) {
         int[] result = new int[amount + 1];
 

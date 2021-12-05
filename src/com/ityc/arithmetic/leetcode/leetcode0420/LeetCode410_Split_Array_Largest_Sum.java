@@ -5,7 +5,7 @@ package com.ityc.arithmetic.leetcode.leetcode0420;
  * @date 2019/09/05 20:33
  * @description ac:100%
  */
-public class LeetCode410分割数组的最大值 {
+public class LeetCode410_Split_Array_Largest_Sum {
     public int splitArray(int[] nums, int m) {
         int n = nums.length;
         int[][] dp =  new int[m + 1][n + 1];

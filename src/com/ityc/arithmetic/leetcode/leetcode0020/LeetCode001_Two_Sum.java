@@ -5,7 +5,7 @@ package com.ityc.arithmetic.leetcode.leetcode0020;
  * @date 2019/12/16 20:31
  * @description ac:100%
  */
-public class LeetCode001两数之和 {
+public class LeetCode001_Two_Sum {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         lable:for(int i = 0; i < nums.length - 1; i++) {

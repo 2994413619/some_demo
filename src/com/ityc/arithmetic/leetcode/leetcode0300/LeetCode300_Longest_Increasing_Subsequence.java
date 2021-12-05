@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @date 2019/12/24 20:33
  * @description ac:100%
  */
-public class LeetCode300最长上升子序列 {
+public class LeetCode300_Longest_Increasing_Subsequence {
     public static int splitArray(int[] nums, int m) {
         int n = nums.length;
         int[][] dp =  new int[m + 1][n + 1];

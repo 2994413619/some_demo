@@ -6,7 +6,7 @@ package com.ityc.arithmetic.leetcode.leetcode0020;
  * @description ac:100%
  * 方法：双指针法
  */
-public class LeetCode011盛最多水的容器 {
+public class LeetCode011_Container_With_Most_Water {
     public int maxArea(int[] height) {
           int a = 0, b = height.length - 1;
           int area = 0,flag;

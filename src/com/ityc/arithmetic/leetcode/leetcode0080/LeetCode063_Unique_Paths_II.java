@@ -5,7 +5,7 @@ package com.ityc.arithmetic.leetcode.leetcode0080;
  * @date 2020/3/11 17:35
  * @description ac:100%
  */
-public class LeetCode063不同路径II {
+public class LeetCode063_Unique_Paths_II {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int[][] result = new int[obstacleGrid.length][obstacleGrid[0].length];
         //为第一行赋值

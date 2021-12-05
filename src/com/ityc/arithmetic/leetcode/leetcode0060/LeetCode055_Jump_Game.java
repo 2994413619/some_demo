@@ -6,7 +6,7 @@ package com.ityc.arithmetic.leetcode.leetcode0060;
  * @description ac:100%
  * 动态规划（纯在型）
  */
-public class LeetCode055跳跃游戏 {
+public class LeetCode055_Jump_Game {
     public boolean canJump(int[] nums) {
         boolean[] judge = new boolean[nums.length];
         judge[0] = true;

@@ -6,7 +6,7 @@ package com.ityc.arithmetic.leetcode.leetcode0100;
  * @description ac:100%
  * 序列型动态规划
  */
-public class LeetCode091解码方法 {
+public class LeetCode091_Decode_Ways {
     public int numDecodings(String s) {
         int[] result = new int[s.length() + 1];
         result[0] = 1;

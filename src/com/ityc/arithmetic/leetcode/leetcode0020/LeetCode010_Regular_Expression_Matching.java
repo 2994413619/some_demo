@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  * @date 2020/3/9 12:30
  * @description ac:100%
  */
-public class LeetCode010正则表达式匹配 {
+public class LeetCode010_Regular_Expression_Matching {
     public boolean isMatch(String s, String p) {
         return Pattern.matches(p, s);
     }

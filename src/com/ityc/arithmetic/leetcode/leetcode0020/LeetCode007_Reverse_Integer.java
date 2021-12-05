@@ -7,7 +7,7 @@ import org.junit.Test;
  * @date 2020/1/29 19:09
  * @description ac:100%
  */
-public class LeetCode007整数反转 {
+public class LeetCode007_Reverse_Integer {
     public int reverse(int x) {
         if(x == 0){
             return 0;

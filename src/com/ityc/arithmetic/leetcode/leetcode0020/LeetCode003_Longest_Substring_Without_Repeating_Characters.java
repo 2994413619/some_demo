@@ -9,7 +9,7 @@ import org.junit.Test;
  * 思路：设置字符串变量 temp为""，遍历字符串s，去除当前字符c，如果temp中没有c，则temp += c；如果temp中有c，则把下标为0~第一次出现c的字符串从temp中移出。
  *       每次，temp变动，记录最大字符串值max
  */
-public class LeetCode003无重复字符的最长子串 {
+public class LeetCode003_Longest_Substring_Without_Repeating_Characters {
 
     public int lengthOfLongestSubstring(String s) {
         String temp = "";

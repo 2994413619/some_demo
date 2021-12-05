@@ -1,14 +1,14 @@
 package com.ityc.arithmetic.leetcode.leetcode0020;
 
+import com.ityc.arithmetic.leetcode.pojo.ListNode;
 import org.junit.Test;
-import pojo.ListNode;
 
 /**
  * @author yuchao
  * @description ac:100%
  * @date 2019/12/17 23:27
  */
-public class LeetCode002两数相加 {
+public class LeetCode002_Add_Two_Numbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode node1 = l1, node2 = l2;    //两个链表的指针
         boolean isHead = true;              //判断是否当前创建的是否为头结点

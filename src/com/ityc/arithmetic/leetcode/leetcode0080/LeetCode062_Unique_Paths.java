@@ -5,7 +5,7 @@ package com.ityc.arithmetic.leetcode.leetcode0080;
  * @date 2020/3/11 16:08
  * @description ac:100%
  */
-public class LeetCode062不同路径 {
+public class LeetCode062_Unique_Paths {
     public int uniquePaths(int m, int n) {
         int[][] arr = new int[n][m];
         //1、初始状态
