@@ -1,8 +1,8 @@
-package com.ityc.se.juc;
+package com.ityc.se.juc.v2;
 
 /**
  * @Author yuchao
- * @Description ÂÒĞòÖ´ĞĞµ¼ÖÂ³ÌĞò½á¹ûºÍÔ¤ÁÏµÄ²»Ò»Ñù
+ * @Description ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ğµï¿½ï¿½Â³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ÏµÄ²ï¿½Ò»ï¿½ï¿½
  * @Date 2021/12/5 14:45
  **/
 public class T18_NoVisibility {
@@ -20,7 +20,7 @@ public class T18_NoVisibility {
 
         t1.start();
 
-        //ÕâÁ½¾äÃ»ÓĞÒÀÀµ¹ØÏµ£¬¿ÉÄÜÂÒĞòÖ´ĞĞ£¬µ¼ÖÂnumberÊä³ö0
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½numberï¿½ï¿½ï¿½0
         number = 42;
         ready = true;
 

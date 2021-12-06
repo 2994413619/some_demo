@@ -1,10 +1,10 @@
-package com.ityc.se.juc;
+package com.ityc.se.juc.v2;
 
 import java.io.IOException;
 
 /**
  * @Author yuchao
- * @Description this¶ÔÏóÒç³ö
+ * @Description thisï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @Date 2021/12/5 15:21
  **/
 public class T19_This_escape {
@@ -13,13 +13,13 @@ public class T19_This_escape {
 
     public T19_This_escape(){
         new Thread(()->{
-            System.out.println(this.num);//ÓĞ¿ÉÄÜÊä³ö0
+            System.out.println(this.num);//ï¿½Ğ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0
         }).start();
     }
 
     public static void main(String[] args) throws IOException {
         new T19_This_escape();
-        System.in.read();//±£Ö¤Ö÷Ïß³Ì½áÊøÇ°£¬ÉÏÃæÄÇ¸öÏß³ÌÖ´ĞĞÍæ
+        System.in.read();//ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ß³Ì½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ß³ï¿½Ö´ï¿½ï¿½ï¿½ï¿½
     }
 
 }

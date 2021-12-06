@@ -1,10 +1,10 @@
-package com.ityc.se.juc;
+package com.ityc.se.juc.v2;
 
 import java.util.concurrent.CountDownLatch;
 
 /**
  * @Author yuchao
- * @Description ÂÒÐòÖ´ÐÐÖ¤Ã÷
+ * @Description ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½Ö¤ï¿½ï¿½
  * @Date 2021/12/5 13:30
  **/
 public class T17_Disorder {
@@ -38,7 +38,7 @@ public class T17_Disorder {
             latch.await();
 
             if(x == 0 && y ==0) {
-                System.out.println("µÚ" + i + "´Î£ºx=" + x + ", y=" + y);
+                System.out.println("ï¿½ï¿½" + i + "ï¿½Î£ï¿½x=" + x + ", y=" + y);
                 break;
             }
 

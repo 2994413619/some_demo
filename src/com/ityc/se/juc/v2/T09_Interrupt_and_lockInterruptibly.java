@@ -1,14 +1,14 @@
-package com.ityc.se.juc;
+package com.ityc.se.juc.v2;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @Author yuchao
- * @Description interrupt能否打断等待lock锁的线程（不能）
- * @Date 2021/12/3 16:26
+ * @Description 使用lock.lockInterruptibly()使线程可以被打断
+ * @Date 2021/12/3 16:35
  **/
-public class T08_Interrupt_and_lock {
+public class T09_Interrupt_and_lockInterruptibly {
 
     private static ReentrantLock lock = new ReentrantLock();
 
@@ -29,9 +29,11 @@ public class T08_Interrupt_and_lock {
         TimeUnit.SECONDS.sleep(1);
 
         Thread t2 = new Thread(()->{
-            lock.lock();
+            System.out.println("t2 start!");
             try{
-
+                lock.lockInterruptibly();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             } finally {
                 lock.unlock();
             }
