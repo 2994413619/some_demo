@@ -13,13 +13,13 @@ import java.util.concurrent.CountDownLatch;
  **/
 public class T16_Cache_line_padding {
 
-    public static long COUNT = 10_0000_0000L;
+    public static long COUNT = 1000_0000L;
 
     private static class T{
-        //private long p1,p2,p3,p4,p5,p6,p7;
-        @Contended //只有jdk1.8起作用  使用时加上参数：-XX:-RestrictContended
-        public long x = 0L;
-        //private long p8,p9,p10,p11,p12,p13,p14,p15;
+        private long p1,p2,p3,p4,p5,p6,p7;
+        //@Contended //只有jdk1.8起作用  使用时加上参数：-XX:-RestrictContended
+        public volatile long x = 0L;
+        private long p8,p9,p10,p11,p12,p13,p14,p15;
     }
 
     public static T[] arr = new T[2];
