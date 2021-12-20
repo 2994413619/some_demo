@@ -51,7 +51,7 @@ public class T28_Hello_PhantomReference {
             }
         }).start();
 
-        //检测队里，看虚引用是否被回收了
+        //检测队列，看虚引用是否被回收了
         new Thread(() -> {
             while (true) {
                 Reference<? extends M> poll = QUEUE.poll();
