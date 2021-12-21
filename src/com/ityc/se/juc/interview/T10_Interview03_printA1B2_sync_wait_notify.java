@@ -1,5 +1,7 @@
 package com.ityc.se.juc.interview;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -8,21 +10,30 @@ import java.util.concurrent.Semaphore;
  *              使用notify()和wait()
  * @Date 2021/12/14 17:56
  **/
-public class T08_Interview02_printA_Z_and_1_26 {
+public class T10_Interview03_printA1B2_sync_wait_notify {
+
+    static List<Integer> intList;
+    static List<Character> strList;
+
+    static {
+        intList = new ArrayList<>();
+        strList = new ArrayList<>();
+        for(int i = 0; i < 26; i++) {
+            intList.add(i + 1);
+            strList.add((char) ('A' + i));
+        }
+    }
+
 
     public static void main(String[] args) {
 
-        Object obj = new Object();
+        final Object obj = new Object();
 
         Thread t1 = new Thread(()->{
             synchronized (obj) {
-                for(int i = 1; i <= 26; i++) {
-                    System.out.println("t1-" + i);
+                for(int i : intList) {
+                    System.out.print(i + " ");
                     obj.notify();
-
-                    if(i == 26){
-                        break;
-                    }
 
                     try {
                         obj.wait();
@@ -30,18 +41,15 @@ public class T08_Interview02_printA_Z_and_1_26 {
                         e.printStackTrace();
                     }
                 }
+                obj.notify();//防止最后程序未退出
             }
 
         });
         Thread t2 = new Thread(()->{
             synchronized (obj) {
-                for (int i = 0; i < 26; i++) {
-                    System.out.println("t2-" + (char) ('A' + i));
+                for (char i : strList) {
+                    System.out.print(i + " ");
                     obj.notify();
-
-                    if(i == 25){
-                        break;
-                    }
 
                     try {
                         obj.wait();
@@ -49,6 +57,7 @@ public class T08_Interview02_printA_Z_and_1_26 {
                         e.printStackTrace();
                     }
                 }
+                obj.notify();//防止最后程序未退出
             }
         });
 

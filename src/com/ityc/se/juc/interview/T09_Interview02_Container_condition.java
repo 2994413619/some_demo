@@ -17,7 +17,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *  对比两种方式，Condition的方式可以更加精确的指定哪些线程被唤醒
  * @Date 2021/12/16 16:43
  **/
-public class T10_Interview03_Container_condition<T> {
+public class T09_Interview02_Container_condition<T> {
     final private LinkedList<T> lists = new LinkedList<>();
     final private int MAX = 10; //最多10个元素
     private int count = 0;
@@ -62,7 +62,7 @@ public class T10_Interview03_Container_condition<T> {
     }
 
     public static void main(String[] args) {
-        T10_Interview03_Container_condition<String> c = new T10_Interview03_Container_condition<>();
+        T09_Interview02_Container_condition<String> c = new T09_Interview02_Container_condition<>();
         //启动消费者线程
         for(int i=0; i<10; i++) {
             new Thread(()->{

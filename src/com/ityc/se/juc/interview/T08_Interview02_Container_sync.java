@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  *  瑕疵：notifyall()；生产者notify的不单单是消费者，还有其他生产者；消费者也是；
  * @Date 2021/12/16 9:45
  **/
-public class T09_Interview03_Container_sync<T> {
+public class T08_Interview02_Container_sync<T> {
     final private LinkedList<T> lists = new LinkedList<>();
     final private int MAX = 10; //最多10个元素
     private int count = 0;
@@ -49,7 +49,7 @@ public class T09_Interview03_Container_sync<T> {
     }
 
     public static void main(String[] args) {
-        T09_Interview03_Container_sync<String> c = new T09_Interview03_Container_sync<>();
+        T08_Interview02_Container_sync<String> c = new T08_Interview02_Container_sync<>();
         //启动消费者线程
         for(int i=0; i<10; i++) {
             new Thread(()->{
