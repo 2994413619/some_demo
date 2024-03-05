@@ -1,5 +1,9 @@
 package com.ityc.test.test2023.test2024;
 
+import javax.xml.crypto.Data;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author yuchao
@@ -20,6 +24,13 @@ public class Second {
         System.out.println(a.equals(null));
         Integer c = 1;
         System.out.println(c == 1);
+        /**
+         * 测试获得当前时间yyyy-MM-dd HH:mm:ss
+         */
+        Date data = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(format.format(data));
+
     }
 
 }
