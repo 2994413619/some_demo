@@ -4,14 +4,14 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * @Author yuchao
- * @Description ÑÝÊ¾CountDownLatch
+ * @Description æ¼”ç¤ºCountDownLatch
  * @Date 2021/12/7 15:31
  **/
 public class T16_Hello_CountDownLatch {
 
     public static void main(String[] args) {
         usingJoin();
-        System.out.println("---------·Ö¸îÏß--------");
+        System.out.println("---------åˆ†å‰²çº¿--------");
         usingCountDownLatch();
     }
 

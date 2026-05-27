@@ -4,7 +4,7 @@ import java.lang.ref.WeakReference;
 
 /**
  * @Author yuchao
- * @Description 弱引用：遭到gc就会回收
+ * @Description 寮卞紩鐢細閬埌gc灏变細鍥炴敹
  * @Date 2021/12/20 14:12
  **/
 public class T27_Hello_WeakReference {
@@ -24,7 +24,7 @@ public class T27_Hello_WeakReference {
 
         ThreadLocal<T27_Hello_WeakReference> tl = new ThreadLocal<>();
         tl.set(new T27_Hello_WeakReference());
-        tl.remove();//不使用一定要remove(),不然会内存泄露；弱引用只能解决key,不能解决value
+        tl.remove();//涓嶄娇鐢ㄤ竴瀹氳remove(),涓嶇劧浼氬唴瀛樻硠闇诧紱寮卞紩鐢ㄥ彧鑳借В鍐砶ey,涓嶈兘瑙ｅ喅value
 
     }
 }

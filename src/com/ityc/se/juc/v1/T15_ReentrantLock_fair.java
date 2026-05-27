@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @Author yuchao
- * @Description ReentrantLockÊ¹ÓÃ¹«Æ½Ëø
+ * @Description ReentrantLockä½¿ç”¨å…¬å¹³é”
  * @Date 2021/12/7 15:12
  **/
 public class T15_ReentrantLock_fair extends Thread {
@@ -15,7 +15,7 @@ public class T15_ReentrantLock_fair extends Thread {
         for(int i = 0; i < 100; i++) {
             try {
                 lock.lock();
-                System.out.println(Thread.currentThread().getName() + "»ñµÃËø");
+                System.out.println(Thread.currentThread().getName() + "è·å¾—é”");
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {

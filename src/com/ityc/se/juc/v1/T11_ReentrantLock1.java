@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author yuchao
- * @Description 演示synchronized的可重入,ReentrantLock可以替代synchronized
+ * @Description 婕旂ずsynchronized鐨勫彲閲嶅叆,ReentrantLock鍙互鏇夸唬synchronized
  * @Date 2021/12/7 14:37
  **/
 public class T11_ReentrantLock1 {

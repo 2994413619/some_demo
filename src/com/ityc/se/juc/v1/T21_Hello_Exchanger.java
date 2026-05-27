@@ -4,7 +4,7 @@ import java.util.concurrent.Exchanger;
 
 /**
  * @Author yuchao
- * @Description 演示Exchanger，两个线程间交换对象
+ * @Description 婕旂ずExchanger锛屼袱涓嚎绋嬮棿浜ゆ崲瀵硅薄
  * @Date 2021/12/7 17:13
  **/
 public class T21_Hello_Exchanger {
@@ -15,7 +15,7 @@ public class T21_Hello_Exchanger {
         new Thread(()->{
             String s = "T1";
             try {
-                s = exchanger.exchange(s);//阻塞方法
+                s = exchanger.exchange(s);//闃诲鏂规硶
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

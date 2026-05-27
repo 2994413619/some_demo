@@ -5,7 +5,7 @@ import java.util.concurrent.locks.LockSupport;
 
 /**
  * @Author yuchao
- * @Description 演示LockSupport
+ * @Description 婕旂ずLockSupport
  * @Date 2021/12/8 9:29
  **/
 public class T22_Hello_LockSupport {
@@ -14,7 +14,7 @@ public class T22_Hello_LockSupport {
             for (int i = 0; i < 10; i++) {
                 System.out.println(i);
                 if(i == 5) {
-                    LockSupport.park();//park:停车
+                    LockSupport.park();//park:鍋滆溅
                 }
                 try {
                     TimeUnit.SECONDS.sleep(1);
@@ -26,7 +26,7 @@ public class T22_Hello_LockSupport {
 
         t.start();
 
-        //线程t已经执行，还没park(),但是可以先调用unpark()；unpark可以先park执行
+        //绾跨▼t宸茬粡鎵ц锛岃繕娌ark(),浣嗘槸鍙互鍏堣皟鐢╱npark()锛泆npark鍙互鍏坧ark鎵ц
         //LockSupport.unpark(t);
 
         try {

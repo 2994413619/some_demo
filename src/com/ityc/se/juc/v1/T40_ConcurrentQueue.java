@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  * @Author yuchao
- * @Description queue常用方法
+ * @Description queue甯哥敤鏂规硶
  * @Date 2021/12/21 10:18
  **/
 public class T40_ConcurrentQueue {
@@ -21,13 +21,13 @@ public class T40_ConcurrentQueue {
 
         System.out.println(strs.size());
 
-        System.out.println(strs.poll());//取出并remove
+        System.out.println(strs.poll());//鍙栧嚭骞秗emove
         System.out.println(strs.size());
 
-        System.out.println(strs.peek());//取出不remove
+        System.out.println(strs.peek());//鍙栧嚭涓峳emove
         System.out.println(strs.size());
 
-        //双端队列Deque
+        //鍙岀闃熷垪Deque
     }
 
 }

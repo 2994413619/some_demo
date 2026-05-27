@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * 测试两种生成随机数的方式
+ * 娴嬭瘯涓ょ鐢熸垚闅忔満鏁扮殑鏂瑰紡
  * @author yuchao
  * @date 2024/2/6 9:33
  **/

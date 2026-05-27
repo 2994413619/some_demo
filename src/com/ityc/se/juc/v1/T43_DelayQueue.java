@@ -8,12 +8,12 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author yuchao
- * @Description 用处：按时间进行任务调度，本质是PriorityQueque
+ * @Description 鐢ㄥ锛氭寜鏃堕棿杩涜浠诲姟璋冨害锛屾湰璐ㄦ槸PriorityQueque
  * @Date 2021/12/21 11:05
  **/
 public class T43_DelayQueue {
 
-    static BlockingQueue<MyTask> tasks = new DelayQueue<>();//里面的任务必须实现Delayed接口
+    static BlockingQueue<MyTask> tasks = new DelayQueue<>();//閲岄潰鐨勪换鍔″繀椤诲疄鐜癉elayed鎺ュ彛
 
     static Random r = new Random();
 

@@ -7,7 +7,7 @@ import java.util.concurrent.locks.LockSupport;
 
 public class T06_Interview01_LockSupport_without_sleep {
 
-    // 添加volatile，使t2能够得到通知
+    // 娣诲姞volatile锛屼娇t2鑳藉寰楀埌閫氱煡
     volatile List lists = new ArrayList();
 
     public void add(Object o) {
@@ -26,7 +26,7 @@ public class T06_Interview01_LockSupport_without_sleep {
 
 
         t1 = new Thread(()->{
-            System.out.println("t1 启动");
+            System.out.println("t1 鍚姩");
             for(int i = 0; i < 10; i++) {
                 obj.add(new Object());
                 System.out.println("add " + i);
@@ -36,17 +36,17 @@ public class T06_Interview01_LockSupport_without_sleep {
                     LockSupport.park();
                 }
             }
-            System.out.println("t1 结束");
+            System.out.println("t1 缁撴潫");
         }, "t1");
 
         t2 = new Thread(()->{
-            System.out.println("t2 启动");
+            System.out.println("t2 鍚姩");
 
-            //可以不判断，直接park()
+            //鍙互涓嶅垽鏂紝鐩存帴park()
             //if(obj.size() != 5) {
                 LockSupport.park();
             //}
-            System.out.println("t2 结束");
+            System.out.println("t2 缁撴潫");
             LockSupport.unpark(t1);
         }, "t2");
 

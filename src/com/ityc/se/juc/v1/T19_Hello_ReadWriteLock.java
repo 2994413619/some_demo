@@ -19,7 +19,7 @@ public class T19_Hello_ReadWriteLock {
             lock.lock();
             Thread.sleep(1000);
             System.out.println("read over!");
-            //Ä£Äâ¶ÁÈ¡²Ù×÷
+            //æ¨¡æ‹Ÿè¯»å–æ“ä½œ
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -33,7 +33,7 @@ public class T19_Hello_ReadWriteLock {
             Thread.sleep(1000);
             value = v;
             System.out.println("write over!");
-            //Ä£ÄâÐ´²Ù×÷
+            //æ¨¡æ‹Ÿå†™æ“ä½œ
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -46,11 +46,11 @@ public class T19_Hello_ReadWriteLock {
 
 
     public static void main(String[] args) {
-        //»¨·Ñ20Ãë
+        //èŠ±è´¹20ç§’
         //Runnable readR = ()-> read(lock);
         //Runnable writeR = ()->write(lock, new Random().nextInt());
 
-        //readÖ»ÐèÒª1Ãë£¬write 2Ãë
+        //readåªéœ€è¦1ç§’ï¼Œwrite 2ç§’
         Runnable readR = ()-> read(readLock);
         Runnable writeR = ()->write(writeLock, new Random().nextInt());
 

@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author yuchao
- * @Description ÎÞ½ç¶ÓÁÐ
- *              ÔÚqueue»ù´¡ÉÏ¼ÓÁËput()¡¢take()·½·¨¡£¶¼ÊÇ×èÈû·½·¨
+ * @Description æ— ç•Œé˜Ÿåˆ—
+ *              åœ¨queueåŸºç¡€ä¸ŠåŠ äº†put()ã€take()æ–¹æ³•ã€‚éƒ½æ˜¯é˜»å¡žæ–¹æ³•
  * @Date 2021/12/21 10:19
  **/
 public class T41_LinkedBlockingQueue {
@@ -21,7 +21,7 @@ public class T41_LinkedBlockingQueue {
         new Thread(() -> {
             for (int i = 0; i < 100; i++) {
                 try {
-                    strs.put("a" + i); //Èç¹ûÂúÁË£¬¾Í»áµÈ´ý
+                    strs.put("a" + i); //å¦‚æžœæ»¡äº†ï¼Œå°±ä¼šç­‰å¾…
                     TimeUnit.MILLISECONDS.sleep(r.nextInt(1000));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -33,7 +33,7 @@ public class T41_LinkedBlockingQueue {
             new Thread(() -> {
                 for (;;) {
                     try {
-                        System.out.println(Thread.currentThread().getName() + " take -" + strs.take()); //Èç¹û¿ÕÁË£¬¾Í»áµÈ´ý
+                        System.out.println(Thread.currentThread().getName() + " take -" + strs.take()); //å¦‚æžœç©ºäº†ï¼Œå°±ä¼šç­‰å¾…
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

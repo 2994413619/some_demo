@@ -1,7 +1,7 @@
 package com.ityc.arithmetic.leetcode.leetcode0660;
 
 /**
- * 设计循环双端队列 ac:100%
+ * 璁捐寰幆鍙岀闃熷垪 ac:100%
  * @author yuchao
  * @Date 2023/11/16 19:04
  **/

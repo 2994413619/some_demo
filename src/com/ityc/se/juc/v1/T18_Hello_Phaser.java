@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author yuchao
- * @Description ÑÝÊ¾Phaser
+ * @Description æ¼”ç¤ºPhaser
  * @Date 2021/12/7 16:10
  **/
 public class T18_Hello_Phaser {
@@ -31,8 +31,8 @@ public class T18_Hello_Phaser {
             new Thread(new Person("p" + i)).start();
         }
 
-        new Thread(new Person("ÐÂÀÉ")).start();
-        new Thread(new Person("ÐÂÄï")).start();
+        new Thread(new Person("æ–°éƒŽ")).start();
+        new Thread(new Person("æ–°å¨˜")).start();
 
     }
 
@@ -44,19 +44,19 @@ public class T18_Hello_Phaser {
 
             switch (phase) {
                 case 0:
-                    System.out.println("ËùÓÐÈËµ½ÆëÁË£¡" + registeredParties);
+                    System.out.println("æ‰€æœ‰äººåˆ°é½äº†ï¼" + registeredParties);
                     System.out.println();
                     return false;
                 case 1:
-                    System.out.println("ËùÓÐÈË³ÔÍêÁË£¡" + registeredParties);
+                    System.out.println("æ‰€æœ‰äººåƒå®Œäº†ï¼" + registeredParties);
                     System.out.println();
                     return false;
                 case 2:
-                    System.out.println("ËùÓÐÈËÀë¿ªÁË£¡" + registeredParties);
+                    System.out.println("æ‰€æœ‰äººç¦»å¼€äº†ï¼" + registeredParties);
                     System.out.println();
                     return false;
                 case 3:
-                    System.out.println("»éÀñ½áÊø£¡ÐÂÀÉÐÂÄï±§±§£¡" + registeredParties);
+                    System.out.println("å©šç¤¼ç»“æŸï¼æ–°éƒŽæ–°å¨˜æŠ±æŠ±ï¼" + registeredParties);
                     return true;
                 default:
                     return true;
@@ -75,28 +75,28 @@ public class T18_Hello_Phaser {
         public void arrive() {
 
             milliSleep(r.nextInt(1000));
-            System.out.printf("%s µ½´ïÏÖ³¡£¡\n", name);
+            System.out.printf("%s åˆ°è¾¾çŽ°åœºï¼\n", name);
             phaser.arriveAndAwaitAdvance();
         }
 
         public void eat() {
             milliSleep(r.nextInt(1000));
-            System.out.printf("%s ³ÔÍê!\n", name);
+            System.out.printf("%s åƒå®Œ!\n", name);
             phaser.arriveAndAwaitAdvance();
         }
 
         public void leave() {
             milliSleep(r.nextInt(1000));
-            System.out.printf("%s Àë¿ª£¡\n", name);
+            System.out.printf("%s ç¦»å¼€ï¼\n", name);
 
 
             phaser.arriveAndAwaitAdvance();
         }
 
         private void hug() {
-            if(name.equals("ÐÂÀÉ") || name.equals("ÐÂÄï")) {
+            if(name.equals("æ–°éƒŽ") || name.equals("æ–°å¨˜")) {
                 milliSleep(r.nextInt(1000));
-                System.out.printf("%s ¶´·¿£¡\n", name);
+                System.out.printf("%s æ´žæˆ¿ï¼\n", name);
                 phaser.arriveAndAwaitAdvance();
             } else {
                 phaser.arriveAndDeregister();
