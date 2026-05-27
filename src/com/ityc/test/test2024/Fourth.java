@@ -1,4 +1,4 @@
-package com.ityc.test.test2023.test2024;
+package com.ityc.test.test2024;
 
 /**
  * 测试Integer在方法调用后会不会返回计算后的值

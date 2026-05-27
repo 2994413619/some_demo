@@ -1,4 +1,4 @@
-package com.ityc.test.test2023.test2024;
+package com.ityc.test.test2024;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
